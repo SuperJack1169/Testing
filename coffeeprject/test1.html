@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe P</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Brew Bliss ☕</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="darkModeToggle">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Savor the Flavor of Freshly Brewed Moments</h2>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+  <section id="menu" class="menu">
+    <h2 class="section-title">Our Menu</h2>
+  
+    <h3 class="category-title">Coffee</h3>
+    <div class="menu-items">
+      <div class="menu-item"><img src="2.jpg"><h4>Espresso</h4><p>$3.00</p><button class="add-to-cart" data-name="Espresso" data-price="3.00">Add to Cart</button></div>
+      <div class="menu-item"><img src="3.jpg"><h4>Cappuccino</h4><p>$4.00</p><button class="add-to-cart" data-name="Cappuccino" data-price="4.00">Add to Cart</button></div>
+      <div class="menu-item"><img src="1.jpg"><h4>Latte</h4><p>$4.50</p><button class="add-to-cart" data-name="Latte" data-price="4.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="Espresso - short.jpg"><h4>Espresso Short</h4><p>$3.50</p><button class="add-to-cart" data-name="Espresso Short" data-price="3.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="Doubleshort.jpg"><h4>Double Short</h4><p>$4.50</p><button class="add-to-cart" data-name="Double Short" data-price="4.50">Add to Cart</button></div>
+    </div>
+  
+    <h3 class="category-title">Special Drinks</h3>
+    <div class="menu-items">
+      <div class="menu-item"><img src="Hot chocolate.jpg"><h4>Hot Chocolate</h4><p>$6.50</p><button class="add-to-cart" data-name="Hot Chocolate" data-price="6.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="Macha.jpg"><h4>Matcha</h4><p>$6.50</p><button class="add-to-cart" data-name="Matcha" data-price="6.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="chocolate free.jpg"><h4>Chocolate Frappe</h4><p>$6.50</p><button class="add-to-cart" data-name="Chocolate Frappe" data-price="6.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="iceleamon.jpg"><h4>Iced Tea</h4><p>$6.50</p><button class="add-to-cart" data-name="Iced Tea" data-price="6.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="Vanilla Bean Frappuccino.jpg"><h4>Vanilla Bean Frappuccino</h4><p>$10.50</p><button class="add-to-cart" data-name="Vanilla Bean Frappuccino" data-price="10.50">Add to Cart</button></div>
+    </div>
+  
+    <h3 class="category-title">Bakery & Food</h3>
+    <div class="menu-items">
+      <div class="menu-item"><img src="5.jpg"><h4>Croissant</h4><p>$8.50</p><button class="add-to-cart" data-name="Croissant" data-price="8.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="French Toast | JUST Egg.jpg"><h4>French Toast</h4><p>$10.50</p><button class="add-to-cart" data-name="French Toast" data-price="10.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="10.jpg"><h4>Avocado Melt Sandwich</h4><p>$12.50</p><button class="add-to-cart" data-name="Avocado Melt Sandwich" data-price="12.50">Add to Cart</button></div>
+      <div class="menu-item"><img src="cheese.jpg"><h4>Cheese Omelette</h4><p>$13.50</p><button class="add-to-cart" data-name="Cheese Omelette" data-price="13.50">Add to Cart</button></div>
+    </div>
+  </section>
+  
+
+
+
+  <section id="cart" class="cart">
+    <h2>Your Order</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout">Checkout</button>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-content">
+      <img src="Menu.jpg" alt="About Us">
+      <div>
+        <h2>About Us</h2>
+        <p>Welcome to Brew Bliss! We serve freshly brewed coffee with love. From espresso to lattes, we have it all!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brew Bliss. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
